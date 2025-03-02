@@ -5,6 +5,7 @@ memset:
 	mv    t1, a0
 	beqz  a2, 2f
 
+1:
 	## Store word (32b)
 	sw    a1, 0(t1)
 	## >>2 equivalent to /4
@@ -13,4 +14,5 @@ memset:
 	add   t1, t1, 4
 	bnez  a2, 1b
 
+2:
 	ret

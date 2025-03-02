@@ -9,4 +9,4 @@ few optimization scenarios.
    program has comments describing the intended optimization(s).
 
 2. `test` contains C code exercising the above binaries. Run `make all` from
-   this directory to run all tests and see their output.
+   this directory to compile all tests and run `make run` to see their output.

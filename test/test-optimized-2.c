@@ -1,4 +1,4 @@
-/* Basic test code for sanity checking the linking process
+/* Make unaligned accesses in memory
 */
 
 #include <stdio.h>
@@ -9,9 +9,9 @@ int main()
 {
 	char str[50];
 
-	memset(str, '#', 10);
+	memset(str, '#', 13);
 
-	str[10] = '\0';
+	str[14] = '\0';
 
 	printf("str now is: %s\n", str);
 
